@@ -16,18 +16,16 @@ import { Deportes2Component } from './components/deportes2/deportes2.component';
 import { ContactoComponent } from './components/inicio/contacto/contacto.component';
 import { TorneosComponent } from './components/torneos/torneos.component';
 import { AboutComponent } from './components/about/about.component';
-import { ProfileComponent } from './components/user/profile/profile.component';
-import { RegisterComponent } from './components/user/register/register.component';
-import { LoginComponent } from './components/user/login/login.component';
+import { LoginComponent } from './components/login/login.component';
 
 
+/* Rutas Menú */
 const appRoutes : Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'deportes', component: Deportes2Component},
   { path: 'torneos', component: TorneosComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'user/login', component: LoginComponent },
-  //Ruta Inicial
+  { path: 'login', component: LoginComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ]
 
@@ -50,8 +48,6 @@ const routerOptions: ExtraOptions = {
     ContactoComponent,
     TorneosComponent,
     AboutComponent,
-    ProfileComponent,
-    RegisterComponent,
     LoginComponent
   ],
   imports: [
