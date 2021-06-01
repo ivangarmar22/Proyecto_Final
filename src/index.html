@@ -97,6 +97,27 @@ function btnBuscar() {
     }
 }
 
+function guardar_localstorage(){
+  let usuario = {
+    email: "ivan@gmail.com",
+    contraseña: "123"
+  };
+
+  let nombre = "Ivan";
+
+  localStorage.setItem("usuario", JSON.stringify(usuario) );
+}
+
+function obtener_localstorage(){
+  let usuario = localStorage.getItem("nombre");
+
+  let persona = JSON.parse(localStorage.getItem("usuario"));
+
+  if (localStorage.getItem("nombre")){
+
+  }
+}
+
 </script>
 
 </html>

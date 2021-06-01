@@ -1,35 +1,25 @@
 <app-menu></app-menu>
 
-<!-- Cabecera -->
-<header class="masthead">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-center text-center">
-            <div class="col-lg-10 align-self-end">
-                <h1 class="text-uppercase text-white font-weight-bold">descubre nuevos hobbies</h1>
-            </div>
-            <div class="col-lg-8 align-self-baseline">
-                <p class="text-white-75 font-weight-light mb-5"></p>
-            </div>
-        </div>
-    </div>
-</header>
+<br><br><br><br><br><br><br><br>
 
 <!-- Login -->
 <div class="wrapper fadeInDown">
     <div id="formContent">
 
       <div class="fadeIn first">
-        <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+        <br><img src="./../../../assets/img/usuarios4.png" id="icon" alt="User Icon" /><br>
       </div>
   
       <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
         <input type="text" name="email" id="email" class="fadeIn second" placeholder="Email" ngModel>
-        <input type="text" name="password" id="password" class="fadeIn third" placeholder="Contraseña" ngModel>
-        <input type="submit" class="fadeIn fourth" value="Log In">
+        <input type="text" name="password" id="password" class="fadeIn third" placeholder="Contraseña" ngModel><br><br>
+        <input type="submit" class="fadeIn fourth" value="Log In"  onclick="guardar_localstorage()">
       </form>
   
     </div>
 </div>
+
+<br><br><br><br><br>
 
 <app-contacto></app-contacto>
 <app-footer></app-footer>
