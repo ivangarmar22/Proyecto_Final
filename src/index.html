@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SportHub</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>   
+</body>
+
+<script>
+
+//Validación Formulario Footer
+function muestraMensaje() {
+    var nombre=false;
+    var email=false;
+    var phone=false;
+
+    var emailRegex = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+
+    var name = document.getElementById("name").value;
+    var correo = document.getElementById("email").value;
+    var telefono = document.getElementById("phone").value;
+
+		if( name == null || name.length == 0 ) {
+			alert(" *** ERROR -> Introduce un Nombre ***");
+		}else{
+      nombre=true;
+    }
+		if( correo == null || correo.length == 0) {
+			alert(" *** ERROR -> Introduce un Correo ***");
+		}else if (emailRegex.test(correo)){
+      email=true;
+    }else{
+      alert(" *** ERROR -> Introduce un Correo Válido***");
+    }
+    if(telefono == null || telefono.length == 0 ) {
+      alert(" *** ERROR -> Introduce un Teléfono ***");
+    }else if (isNaN(telefono)){
+      alert(" *** ERROR -> El Teléfono no puede contener letras ni carcteres especiales ***");
+    }else{
+      phone=true;
+    }
+    if(nombre && email && phone){
+      alert("El formulario se ha enviado correctamente");
+    }
+}
+
+//Función Torneos
+function btnBuscar() {
+    var nombre1=false;
+    var deporte1=false;
+    var ciudad1=false;
+    var equipo1=false;
+    var fecha1=false;
+    var hoy = "2021-06-21";
+
+    var nombre = document.getElementById("nombre").value;
+    var deporte = document.getElementById("deporte").value;
+    var ciudad = document.getElementById("ciudad").value;
+    var equipo = document.getElementById("equipo").value;
+    var fecha = document.getElementById("fecha").value;
+
+		if( nombre == null || nombre.length == 0 ) {
+			alert(" *** ERROR -> Introduce el Nombre del Torneo ***");
+		}else{
+      nombre1=true;
+    }
+		if( deporte == null || deporte.length == 0 ) {
+			alert(" *** ERROR -> Introduce un Deporte ***");
+		}else{
+      deporte1=true;
+    }
+    if( ciudad == null || ciudad.length == 0 ) {
+			alert(" *** ERROR -> Selecciona una Ciudad ***");
+		}else{
+      ciudad1=true;
+    }
+    if( equipo == null || equipo.length == 0 ) {
+			alert(" *** ERROR -> Introduce el Número de Equipos ***");
+		}else{
+      equipo1=true;
+    }
+    if( fecha == null || fecha.length == 0 ) {
+			alert(" *** ERROR -> Selecciona la Fecha del Torneo ***");
+		}else if (hoy > fecha){
+      alert(" *** ERROR -> La Fecha del Torneo tiene que ser mayor a la ACTUAL ***");
+    }else{
+      fecha1=true;
+    }
+
+    if(nombre1 && deporte1 && ciudad1 && equipo1 && fecha1){
+      alert("El torneo "+nombre+" se ha creado en la fecha "+fecha+" correctamente!");
+    }
+}
+
+</script>
+
+</html>

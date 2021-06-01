@@ -1,0 +1,35 @@
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Contacta con nosotros!</h2><br><br>
+        </div>
+        <form id="contactForm" name="sentMessage" novalidate="novalidate" method="post">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Por favor, introduce un nombre" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Por favor, introduce un email" />
+                        <span id="emailOK"></span>
+                    </div>
+                    <div class="form-group mb-md-0">
+                        <input class="form-control" id="phone" type="tel" placeholder="Teléfono" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <textarea class="form-control" id="message" placeholder="Comentarios" ></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div id="success"></div><br>
+                <button class="btn btn-primary btn-xl text-uppercase"  onclick="muestraMensaje()" type="submit">Enviar Formulario</button>
+            </div>
+        </form>
+    </div>
+</section>
