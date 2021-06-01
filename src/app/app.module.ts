@@ -17,6 +17,9 @@ import { ContactoComponent } from './components/inicio/contacto/contacto.compone
 import { TorneosComponent } from './components/torneos/torneos.component';
 import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { LoginGuard } from './login.guard';
+import { NoLoginGuard } from './no-login.guard';
 
 
 /* Rutas Menú */
@@ -25,7 +28,8 @@ const appRoutes : Routes = [
   { path: 'deportes', component: Deportes2Component},
   { path: 'torneos', component: TorneosComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginComponent, canActivate: [NoLoginGuard] },
+  { path: 'profile', component: ProfileComponent, canActivate: [LoginGuard] },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ]
 
@@ -48,15 +52,17 @@ const routerOptions: ExtraOptions = {
     ContactoComponent,
     TorneosComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes, routerOptions)
+    RouterModule.forRoot(appRoutes, routerOptions),
+
   ],
-  providers: [],
+  providers: [LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

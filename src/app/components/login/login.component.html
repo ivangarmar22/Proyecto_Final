@@ -15,7 +15,21 @@
 </header>
 
 <!-- Login -->
+<div class="wrapper fadeInDown">
+    <div id="formContent">
 
+      <div class="fadeIn first">
+        <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+      </div>
+  
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <input type="text" name="email" id="email" class="fadeIn second" placeholder="Email" ngModel>
+        <input type="text" name="password" id="password" class="fadeIn third" placeholder="Contraseña" ngModel>
+        <input type="submit" class="fadeIn fourth" value="Log In">
+      </form>
+  
+    </div>
+</div>
 
 <app-contacto></app-contacto>
 <app-footer></app-footer>
