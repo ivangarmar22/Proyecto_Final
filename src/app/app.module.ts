@@ -20,6 +20,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { LoginGuard } from './login.guard';
 import { NoLoginGuard } from './no-login.guard';
+import { RegistroComponent } from './components/registro/registro.component';
 
 
 /* Rutas Menú */
@@ -29,6 +30,7 @@ const appRoutes : Routes = [
   { path: 'torneos', component: TorneosComponent},
   { path: 'about', component: AboutComponent},
   { path: 'login', component: LoginComponent, canActivate: [NoLoginGuard] },
+  { path: 'registro', component: RegistroComponent},
   { path: 'profile', component: ProfileComponent, canActivate: [LoginGuard] },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ]
@@ -53,7 +55,8 @@ const routerOptions: ExtraOptions = {
     TorneosComponent,
     AboutComponent,
     LoginComponent,
-    ProfileComponent
+    ProfileComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

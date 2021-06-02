@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
   colorFondo:boolean  = false;
   cambiarEstilo(){
       let styles= {
-          'background-color': this.colorFondo ? '#FFA93C' : '',
+          'background-color': this.colorFondo ? '' : '#FFA93C',
       };
       return styles;
   }

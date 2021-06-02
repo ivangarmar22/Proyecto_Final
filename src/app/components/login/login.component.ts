@@ -15,12 +15,17 @@ export class LoginComponent implements OnInit {
   }
 
   login(form: NgForm){
-    console.log(form.value);
 
-    if(form.value.email == 'admin@gmail.com' && form.value.password == "123456"){
-      localStorage.setItem('email', form.value.email);
+    if(form.value.email == localStorage.getItem("email") && form.value.password == localStorage.getItem("password")){
       this.router.navigate(['/profile']);
+    }else if(form.value.email == ""){
+      alert(" *** Introduce un EMAIL ***")
+    }else if(form.value.password == ""){
+      alert(" *** Introduce una CONTRASEÑA ***")
+    }else{
+      alert(" *** ERROR -> Los DATOS introducidos son erróneos ***")
     }
+
   }
 
 }

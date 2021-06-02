@@ -17,7 +17,7 @@ export class LoginGuard implements CanActivate, CanActivateChild, CanDeactivate<
       } else {
         return true;
       }
-
+      
   }
   canActivateChild(
     childRoute: ActivatedRouteSnapshot,

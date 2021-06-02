@@ -13,7 +13,7 @@
 
 <script>
 
-//Validación Formulario Footer
+// Validación Formulario Footer
 function muestraMensaje() {
     var nombre=false;
     var email=false;
@@ -49,7 +49,7 @@ function muestraMensaje() {
     }
 }
 
-//Función Torneos
+// Función Torneos
 function btnBuscar() {
     var nombre1=false;
     var deporte1=false;
@@ -97,25 +97,26 @@ function btnBuscar() {
     }
 }
 
+// Funcion Agregar usuario
 function guardar_localstorage(){
-  let usuario = {
-    email: "ivan@gmail.com",
-    contraseña: "123"
-  };
 
-  let nombre = "Ivan";
+  let nombre = document.getElementById("nombre").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
 
-  localStorage.setItem("usuario", JSON.stringify(usuario) );
+  localStorage.setItem("nombre", nombre);
+  localStorage.setItem("email", email);
+  localStorage.setItem("password", password);
+
 }
 
+// Funcion Logear usuario
 function obtener_localstorage(){
-  let usuario = localStorage.getItem("nombre");
 
-  let persona = JSON.parse(localStorage.getItem("usuario"));
+  let nombre = localStorage.getItem("nombre");
+  let email = localStorage.getItem("email");
+  let password = localStorage.getItem("password");
 
-  if (localStorage.getItem("nombre")){
-
-  }
 }
 
 </script>

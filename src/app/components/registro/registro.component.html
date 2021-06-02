@@ -7,17 +7,18 @@
     <div id="formContent">
 
       <div class="fadeIn first">
-        <br><img src="./../../../assets/img/usuarios4.png" id="icon" alt="User Icon" /><br>
+        <br><img src="./../../../assets/img/registro1.jpg" id="icon" alt="Registro Icon" /><br>
       </div>
   
-      <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <form #registroForm="ngForm" (ngSubmit)="registro(registroForm)">
+        <input type="text" name="nombre" id="nombre" class="fadeIn first" placeholder="Nombre" ngModel>
         <input type="text" name="email" id="email" class="fadeIn second" placeholder="Email" ngModel>
         <input type="text" name="password" id="password" class="fadeIn third" placeholder="Contraseña" ngModel><br><br>
-        <input type="submit" class="fadeIn fourth" value="Log In"  onclick="obtener_localstorage()">
+        <input type="submit" class="fadeIn fourth" value="Sing Up"  onclick="guardar_localstorage()">
       </form>
 
       <div id="formFooter">
-        <a class="underlineHover" href="/registro">¿No estás registrado?</a>
+        <a class="underlineHover" href="/login">¿Ya tienes una cuenta?</a>
       </div>
   
     </div>
