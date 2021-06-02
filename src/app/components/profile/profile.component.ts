@@ -23,7 +23,7 @@ export class ProfileComponent implements OnInit {
 
   logout(){
     this.router.navigate(['/login']);
-    /*localStorage.removeItem('email');*/
+    localStorage.removeItem('token');
   }
 
 }

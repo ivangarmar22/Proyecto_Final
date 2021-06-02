@@ -18,6 +18,10 @@ export class LoginComponent implements OnInit {
 
     if(form.value.email == localStorage.getItem("email") && form.value.password == localStorage.getItem("password")){
       this.router.navigate(['/profile']);
+
+      let token = "1";
+      localStorage.setItem("token", token);
+
     }else if(form.value.email == ""){
       alert(" *** Introduce un EMAIL ***")
     }else if(form.value.password == ""){
