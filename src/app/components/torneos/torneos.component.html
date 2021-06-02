@@ -2,54 +2,118 @@
 
 <!-- Header -->
 <header class="masthead">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-center text-center">
-            <div class="col-lg-10 align-self-end">
-                <h1 class="text-uppercase text-white font-weight-bold">¡crea tu torneo!</h1>
-            </div>
-            <div class="col-lg-8 align-self-baseline">
-                <p class="text-white-75 font-weight-light mb-5"></p>
-            </div>
-        </div>
+  <div class="container h-100">
+    <div class="row h-100 align-items-center justify-content-center text-center">
+      <div class="col-lg-10 align-self-end">
+        <h1 class="text-uppercase text-white font-weight-bold">¡crea tu torneo!</h1>
+      </div>
+      <div class="col-lg-8 align-self-baseline">
+        <p class="text-white-75 font-weight-light mb-5"></p>
+      </div>
     </div>
+  </div>
 </header>
 
 <!-- Introducción -->
 <section class="page-section bg-primary" id="introduccion">
   <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-              <h2 class="text-white mt-0">¡Crea todo tipo de torneos!</h2>
-              <hr class="divider light my-4" />
-              <p class="text-white-50 mb-4">Sport Hub ofrece a sus usuarios la posibilidad de crear, gestionar y administrar todo tipo de torneos para que las personas puedan vivir nuevas experiencias a través de eventos organizados por ellos mismos y poder compartirlos luego en la misma plataforma.</p>
-          </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="text-white mt-0">¡Crea todo tipo de torneos!</h2>
+        <hr class="divider light my-4" />
+        <p class="text-white-50 mb-4">Sport Hub ofrece a sus usuarios la posibilidad de crear, gestionar y administrar
+          todo tipo de torneos para que las personas puedan vivir nuevas experiencias a través de eventos organizados
+          por ellos mismos y poder compartirlos luego en la misma plataforma.</p>
       </div>
+    </div>
   </div>
 </section>
 
-<br><br><br><br><br>
+<br><br>
+
+<!-- Iconos -->
+<section>
+  <div class="container">
+
+    <div class="row mbr-justify-content-center">
+
+      <div class="col-lg-6 mbr-col-md-10">
+        <div class="wrap">
+          <div class="ico-wrap">
+            <span class="mbr-iconfont fa-volume-up fa"></span>
+          </div>
+          <div class="text-wrap vcenter">
+            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Torneos <span>Online</span></h2>
+            <p class="mbr-fonts-style text1 mbr-text display-6">Organizar un torneo con el software Sport Hub es extremadamente sencillo. Una inscripción online, un calendario y un cuadro actualizados automáticamente y muchas otras ventajas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mbr-col-md-10">
+        <div class="wrap">
+          <div class="ico-wrap">
+            <span class="mbr-iconfont fa-calendar fa"></span>
+          </div>
+          <div class="text-wrap vcenter">
+            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Inscripción online
+            </h2>
+            <p class="mbr-fonts-style text1 mbr-text display-6">Todos los torneos organizados usando Sport Hub traen un formulario de inscripción online. De este modo puedes llevar el control de los apuntados sin tener que diseñar formularios, hojas de excel y cuentas de email.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mbr-col-md-10">
+        <div class="wrap">
+          <div class="ico-wrap">
+            <span class="mbr-iconfont fa-globe fa"></span>
+          </div>
+          <div class="text-wrap vcenter">
+            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Ventajas para los participantes
+            </h2>
+            <p class="mbr-fonts-style text1 mbr-text display-6">En Sport Hub hemos pensado tanto en los organizadores como en los jugadores. El usuario participante también tiene una serie de ventajas que harán su experiencia mucho mejor. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mbr-col-md-10">
+        <div class="wrap">
+          <div class="ico-wrap">
+            <span class="mbr-iconfont fa-trophy fa"></span>
+          </div>
+          <div class="text-wrap vcenter">
+            <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Rápido, Simple y Gratis </h2>
+            <p class="mbr-fonts-style text1 mbr-text display-6">Crea el torneo de tus sueños con el gestor de torneos y campeonatos Sport Hub en solo unos minutos. Disfruta de una interfaz limpia y simple para crear y administrar tus torneos, ligas y campeonatos.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- Título -->
 <h1 align="center" class="text-uppercase text-black font-weight-bold">ORGANIZA TU PROPRIO TORNEO</h1>
 
 <!-- Formulario de contacto -->
 <section class="showcase">
-<div class="row p-5">
+  <div class="row p-5">
     <div class="container p-1 mx-3 marco col-5">
 
       <form (ngSubmit)="onSubmit()" #miForm="ngForm">
         <h2 class="h4 mb-4">Rellenas los datos</h2>
 
         <div class="form-group">
-          <input id="nombre" type="text" class="form-control" placeholder="Nombre del Torneo" [(ngModel)]="nombre" name="nombre">
+          <input id="nombre" type="text" class="form-control" placeholder="Nombre del Torneo" [(ngModel)]="nombre"
+            name="nombre">
         </div>
 
         <div class="form-group">
-          <input id="deporte" type="text" class="form-control" placeholder="Deporte" [(ngModel)]="deporte" name="deporte">
+          <input id="deporte" type="text" class="form-control" placeholder="Deporte" [(ngModel)]="deporte"
+            name="deporte">
         </div>
 
         <div class="form-group">
-          <select id="ciudad" class="form-control" placeholder="Escoge una Ciudad" placeholder="ciudad" [(ngModel)]="ciudad" name="ciudad">
+          <select id="ciudad" class="form-control" placeholder="Escoge una Ciudad" placeholder="ciudad"
+            [(ngModel)]="ciudad" name="ciudad">
             <option hidden selected>Escoge una Ciudad</option>
             <option>Málaga</option>
             <option>Marbella</option>
@@ -65,16 +129,18 @@
         </div>
 
         <div class="form-group">
-          <input id="equipo" type="number" class="form-control" value="2" min="2" max="1000" placeholder="Número Equipos" [(ngModel)]="equipos" name="participantes">
+          <input id="equipo" type="number" class="form-control" value="2" min="2" max="1000"
+            placeholder="Número Equipos" [(ngModel)]="equipos" name="participantes">
         </div>
 
         <div class="form-group">
-          <input id="fecha" type="date" class="form-control" placeholder="Número participantes" [(ngModel)]="fecha" name="fecha">
+          <input id="fecha" type="date" class="form-control" placeholder="Número participantes" [(ngModel)]="fecha"
+            name="fecha">
         </div>
 
       </form>
     </div>
-    
+
     <!-- Mostrar Datos Formulario -->
     <div class="container col-5">
       <br><br><br>
@@ -95,20 +161,19 @@
             <td>{{ ciudad }}</td>
             <td>{{ equipos }}</td>
             <td>{{ fecha }}</td>
-          </tr>         
+          </tr>
         </tbody>
       </table>
     </div>
-  </div>  
+  </div>
 
   <div class="text-center">
-      <button style="background-color:#FF8933;" class="btn btn-primary btn-xl text-uppercase"  onclick="btnBuscar()" id="btnBuscar" type="submit">Crear Torneo</button>
+    <button style="background-color:#FF8933;" class="btn btn-primary btn-xl text-uppercase" onclick="btnBuscar()"
+      id="btnBuscar" type="submit">Crear Torneo</button>
   </div>
 
   <br><br><br><br><br><br><br>
 </section>
-
-
 
 <app-contacto></app-contacto>
 <app-footer></app-footer>

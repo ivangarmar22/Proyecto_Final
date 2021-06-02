@@ -16,7 +16,7 @@ export class ProfileComponent implements OnInit {
   colorFondo:boolean  = false;
   cambiarEstilo(){
       let styles= {
-          'background-color': this.colorFondo ? '#FFA93C' : '',
+          'background-color': this.colorFondo ? '' : '#FFA93C',
       };
       return styles;
   }
@@ -25,5 +25,8 @@ export class ProfileComponent implements OnInit {
     this.router.navigate(['/login']);
     localStorage.removeItem('token');
   }
+
+  usuario = localStorage.getItem("nombre");
+  email = localStorage.getItem("email");
 
 }
