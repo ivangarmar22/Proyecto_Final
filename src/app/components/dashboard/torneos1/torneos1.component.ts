@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-torneos1',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Torneos1Component implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+
+  logout(){
+    this.router.navigate(['/login']);
+    localStorage.removeItem('token');
+  }
+
+  usuario = localStorage.getItem("nombre");
+  email = localStorage.getItem("email");
 
 }
