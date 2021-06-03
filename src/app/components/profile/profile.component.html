@@ -61,9 +61,6 @@
 
  <!-- Dashboard -->
  <div class="page-wrapper chiller-theme toggled">
-   <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
-     <i class="fas fa-bars"></i>
-   </a>
    <nav id="sidebar" class="sidebar-wrapper">
      <div class="sidebar-content">
        <div class="sidebar-header">
@@ -80,19 +77,7 @@
            </span>
          </div>
        </div>
-       <!-- Menú Búsqueda -->
-       <div class="sidebar-search">
-         <div>
-           <div class="input-group">
-             <input type="text" class="form-control search-menu" placeholder="Buscar...">
-             <div class="input-group-append">
-               <span class="input-group-text">
-                 <i class="fa fa-search" aria-hidden="true"></i>
-               </span>
-             </div>
-           </div>
-         </div>
-       </div>
+
        <!-- Menú Opciones -->
        <div class="sidebar-menu">
          <ul>
@@ -101,7 +86,7 @@
            </li>
            <!-- Opción Dashboard -->
            <li>
-             <a href="#">
+             <a href="/profile">
                <i class="fa fa-user-circle-o"></i>
                <span>Dashboard</span>
                <span class="badge badge-pill badge-warning">New</span>
@@ -109,14 +94,14 @@
            </li>
            <!-- Opción Deportes -->
            <li>
-             <a href="#">
+             <a href="/sports">
                <i class="fa fa-futbol-o"></i>
                <span>Deportes</span>
              </a>
            </li>
            <!-- Opción Torneos -->
            <li>
-             <a href="#">
+             <a href="/torneos1">
                <i class="fa fa-trophy"></i>
                <span>Torneos</span>
                <span class="badge badge-pill badge-primary">Beta</span>
@@ -129,21 +114,21 @@
            </li>
            <!-- Opción Servicios -->
            <li>
-             <a href="#">
+             <a href="/servicios1">
                <i class="fa fa-address-card-o"></i>
                <span>Servicios</span>
              </a>
            </li>
            <!-- Opción Mapa -->
            <li>
-             <a href="#">
+             <a href="/mapa">
                <i class="fa fa-map-marker"></i>
                <span>Mapa</span>
              </a>
            </li>
            <!-- Opción Calendario -->
            <li>
-             <a href="#">
+             <a href="/calendario">
                <i class="fa fa-calendar"></i>
                <span>Calendario</span>
                <span class="badge badge-pill badge-danger">3</span>
@@ -151,33 +136,48 @@
            </li>
            <!-- Opción Documentos -->
            <li>
-             <a href="#">
+             <a href="/documentos">
                <i class="fa fa-folder"></i>
                <span>Documentos</span>
              </a>
            </li>
            <!-- Opción Configuración -->
            <li>
-             <a href="#">
+             <a href="/configuracion">
                <i class="fa fa-cog"></i>
                <span>Configuración</span>
              </a>
            </li>
          </ul>
+       </div><br>
+
+       <!-- Menú Búsqueda -->
+       <div class="sidebar-search">
+         <div><br>
+           <div class="input-group">
+             <input type="text" class="form-control search-menu" placeholder="Buscar...">
+             <div class="input-group-append">
+               <span class="input-group-text">
+                 <i class="fa fa-search" aria-hidden="true"></i>
+               </span>
+             </div>
+           </div>
+         </div>
        </div>
-     </div>
+
+      </div>    
 
      <!-- Dashboard Footer  -->
      <div class="sidebar-footer">
-       <a href="#">
+       <a href="/profile">
          <i class="fa fa-bell"></i>
          <span class="badge badge-pill badge-warning notification">3</span>
        </a>
-       <a href="#">
+       <a href="/profile">
          <i class="fa fa-envelope"></i>
          <span class="badge badge-pill badge-success notification">7</span>
        </a>
-       <a (click)='logout()'>
+       <a href="/login" (click)='logout()'>
          <i class="fa fa-sign-out fa-lg"></i>
        </a>
      </div>
@@ -187,10 +187,8 @@
    <!-- Dashboard Menú  -->
    <main class="page-content">
      <div class="container-fluid">
-       <!-- Dashboard -->
-       <div class="site-section bg-light border-bottom" id="team-section"></div>
-       <h1 align="center" class="text-uppercase" style="color:#000000">BIENVENIDO {{usuario}}!</h1><br><br><br><br>
 
+       <h1 align="center" class="text-uppercase" style="color:#000000">BIENVENIDO, {{usuario}}!</h1><br><br><br><br>
 
        <div class="container">
          <div class="row">
@@ -345,3 +343,6 @@
 
          </div>
        </div>
+     </div>
+   </main>
+ </div>
