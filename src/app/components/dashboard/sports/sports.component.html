@@ -1,1 +1,178 @@
-<p>sports works!</p>
+<!-- Dashboard -->
+<div class="page-wrapper chiller-theme toggled">
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="/assets/img/empleados/empleado_1.jpg" alt="User picture">
+        </div>
+        <div class="user-info">
+          <span class="user-name"><strong>{{usuario}}</strong>
+          </span>
+          <span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Menú Opciones -->
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+          <!-- Opción Dashboard -->
+          <li>
+            <a href="/profile">
+              <i class="fa fa-user-circle-o"></i>
+              <span>Dashboard</span>
+              <span class="badge badge-pill badge-warning">New</span>
+            </a>
+          </li>
+          <!-- Opción Deportes -->
+          <li>
+            <a href="/sports">
+              <i class="fa fa-futbol-o"></i>
+              <span>Deportes</span>
+            </a>
+          </li>
+          <!-- Opción Torneos -->
+          <li>
+            <a href="/torneos1">
+              <i class="fa fa-trophy"></i>
+              <span>Torneos</span>
+              <span class="badge badge-pill badge-primary">Beta</span>
+            </a>
+          </li>
+
+          <!-- Opción Personal -->
+          <li class="header-menu">
+            <span>Personal</span>
+          </li>
+          <!-- Opción Servicios -->
+          <li>
+            <a href="/servicios1">
+              <i class="fa fa-address-card-o"></i>
+              <span>Servicios</span>
+            </a>
+          </li>
+          <!-- Opción Mapa -->
+          <li>
+            <a href="/mapa">
+              <i class="fa fa-map-marker"></i>
+              <span>Mapa</span>
+            </a>
+          </li>
+          <!-- Opción Calendario -->
+          <li>
+            <a href="/calendario">
+              <i class="fa fa-calendar"></i>
+              <span>Calendario</span>
+              <span class="badge badge-pill badge-danger">3</span>
+            </a>
+          </li>
+          <!-- Opción Documentos -->
+          <li>
+            <a href="/documentos">
+              <i class="fa fa-folder"></i>
+              <span>Documentos</span>
+            </a>
+          </li>
+          <!-- Opción Configuración -->
+          <li>
+            <a href="/configuracion">
+              <i class="fa fa-cog"></i>
+              <span>Configuración</span>
+            </a>
+          </li>
+        </ul>
+      </div><br>
+
+      <!-- Menú Búsqueda -->
+      <div class="sidebar-search">
+        <div><br>
+          <div class="input-group">
+            <input type="text" class="form-control search-menu" placeholder="Buscar...">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Dashboard Footer  -->
+    <div class="sidebar-footer">
+      <a href="/profile">
+        <i class="fa fa-bell"></i>
+        <span class="badge badge-pill badge-warning notification">3</span>
+      </a>
+      <a href="/profile">
+        <i class="fa fa-envelope"></i>
+        <span class="badge badge-pill badge-success notification">7</span>
+      </a>
+      <a href="/login" (click)='logout()'>
+        <i class="fa fa-sign-out fa-lg"></i>
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- Dashboard Menú  -->
+  <main class="page-content">
+    <div class="container-fluid">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <div class="container-fluid">
+        <div class="title-arch">Our Project<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar
+            ex pulvinar est laoreet ullamcorper.</p>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project wow animated animated4 fadeInLeft">
+          <div class="project-hover">
+            <h2>TITLE</h2>
+
+            <hr />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar ex pulvinar est laoreet
+              ullamcorper.</p>
+            <a href="#">See Project</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-2 wow animated animated3 fadeInLeft">
+          <div class="project-hover">
+            <h2>TITLE</h2>
+            <hr />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar ex pulvinar est laoreet
+              ullamcorper.</p>
+            <a href="#">See Project</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-3 wow animated animated2 fadeInLeft">
+          <div class="project-hover">
+            <h2>TITLE</h2>
+            <hr />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar ex pulvinar est laoreet
+              ullamcorper.</p>
+            <a href="#">See Project</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-4 wow animated fadeInLeft">
+          <div class="project-hover">
+            <h2>TITLE</h2>
+            <hr />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar ex pulvinar est laoreet
+              ullamcorper.</p>
+            <a href="#">See Project</a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </main>
+</div>
