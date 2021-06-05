@@ -4,23 +4,23 @@
 
 <!-- Login -->
 <div class="wrapper fadeInDown">
-    <div id="formContent">
+  <div id="formContent">
 
-      <div class="fadeIn first">
-        <br><img src="./../../../assets/img/usuarios4.png" id="icon" alt="User Icon" /><br>
-      </div>
-  
-      <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
-        <input type="text" name="email" id="email" class="fadeIn second" placeholder="Email" ngModel>
-        <input type="text" name="password" id="password" class="fadeIn third" placeholder="Contraseña" ngModel><br><br>
-        <input type="submit" class="fadeIn fourth" value="Log In"  onclick="obtener_localstorage()">
-      </form>
-
-      <div id="formFooter">
-        <a class="underlineHover" href="/registro">¿No estás registrado?</a>
-      </div>
-  
+    <div class="fadeIn first">
+      <br><img src="./../../../assets/img/usuarios4.png" id="icon" alt="User Icon" /><br>
     </div>
+
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <input type="text" name="email" id="email" class="fadeIn second" placeholder="Email" ngModel>
+      <input type="text" name="password" id="password" class="fadeIn third" placeholder="Contraseña" ngModel><br><br>
+      <input type="submit" class="fadeIn fourth" value="Log In" onclick="obtener_localstorage()">
+    </form>
+
+    <div id="formFooter">
+      <a class="underlineHover" href="/registro">¿No estás registrado?</a>
+    </div>
+
+  </div>
 </div>
 
 <br><br><br><br><br>

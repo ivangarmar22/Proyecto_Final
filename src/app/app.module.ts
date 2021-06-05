@@ -31,22 +31,22 @@ import { Servicios1Component } from './components/dashboard/servicios1/servicios
 
 
 /* Rutas Menú */
-const appRoutes : Routes = [
-  { path: 'home', component: HomeComponent},
-  { path: 'comunidad', component: Deportes2Component},
-  { path: 'torneos', component: TorneosComponent},
-  { path: 'about', component: AboutComponent},
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'comunidad', component: Deportes2Component },
+  { path: 'torneos', component: TorneosComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent, canActivate: [NoLoginGuard] },
-  { path: 'registro', component: RegistroComponent},
+  { path: 'registro', component: RegistroComponent },
   { path: 'profile', component: ProfileComponent, canActivate: [LoginGuard] },
-  { path: 'sports', component: SportsComponent},
-  { path: 'torneos1', component: Torneos1Component},
-  { path: 'servicios1', component: Servicios1Component},
-  { path: 'mapa', component: MapaComponent},
-  { path: 'calendario', component: CalendarioComponent},
-  { path: 'documentos', component: DocumentosComponent},
-  { path: 'configuracion', component: ConfiguracionComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full'}
+  { path: 'sports', component: SportsComponent },
+  { path: 'torneos1', component: Torneos1Component },
+  { path: 'servicios1', component: Servicios1Component },
+  { path: 'mapa', component: MapaComponent },
+  { path: 'calendario', component: CalendarioComponent },
+  { path: 'documentos', component: DocumentosComponent },
+  { path: 'configuracion', component: ConfiguracionComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ]
 
 const routerOptions: ExtraOptions = {

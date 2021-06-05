@@ -1,234 +1,244 @@
- <!-- Dashboard -->
- <div class="page-wrapper chiller-theme toggled">
-   <nav id="sidebar" class="sidebar-wrapper">
-     <div class="sidebar-content">
-       <div class="sidebar-header">
-         <div class="user-pic">
-           <img class="img-responsive img-rounded" src="/assets/img/empleados/empleado_1.jpg" alt="User picture">
-         </div>
-         <div class="user-info">
-           <span class="user-name"><strong>{{usuario}}</strong>
-           </span>
-           <span class="user-role">Administrator</span>
-           <span class="user-status">
-             <i class="fa fa-circle"></i>
-             <span>Online</span>
-           </span>
-         </div>
-       </div>
+<!-- Dashboard -->
+<div class="page-wrapper chiller-theme toggled">
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="/assets/img/empleados/empleado_1.jpg" alt="User picture">
+        </div>
+        <div class="user-info">
+          <span class="user-name"><strong>{{usuario}}</strong>
+          </span>
+          <span class="user-role">{{email}}</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+        </div>
+      </div>
 
-       <!-- Menú Opciones -->
-       <div class="sidebar-menu">
-         <ul>
-           <li class="header-menu">
-             <span>General</span>
-           </li>
-           <!-- Opción Dashboard -->
-           <li>
-             <a href="/profile">
-               <i class="fa fa-user-circle-o"></i>
-               <span>Dashboard</span>
-               <span class="badge badge-pill badge-warning">New</span>
-             </a>
-           </li>
-           <!-- Opción Deportes -->
-           <li>
-             <a href="/sports">
-               <i class="fa fa-futbol-o"></i>
-               <span>Deportes</span>
-             </a>
-           </li>
-           <!-- Opción Torneos -->
-           <li>
-             <a href="/torneos1">
-               <i class="fa fa-trophy"></i>
-               <span>Torneos</span>
-               <span class="badge badge-pill badge-primary">Beta</span>
-             </a>
-           </li>
+      <!-- Menú Opciones -->
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+          <!-- Opción Dashboard -->
+          <li>
+            <a href="/profile">
+              <i class="fa fa-user-circle-o"></i>
+              <span>Dashboard</span>
+              <span class="badge badge-pill badge-warning">New</span>
+            </a>
+          </li>
+          <!-- Opción Deportes -->
+          <li>
+            <a href="/sports">
+              <i class="fa fa-futbol-o"></i>
+              <span>Deportes</span>
+            </a>
+          </li>
+          <!-- Opción Torneos -->
+          <li>
+            <a href="/torneos1">
+              <i class="fa fa-trophy"></i>
+              <span>Torneos</span>
+              <span class="badge badge-pill badge-primary">Beta</span>
+            </a>
+          </li>
 
-           <!-- Opción Personal -->
-           <li class="header-menu">
-             <span>Personal</span>
-           </li>
-           <!-- Opción Servicios -->
-           <li>
-             <a href="/servicios1">
-               <i class="fa fa-address-card-o"></i>
-               <span>Servicios</span>
-             </a>
-           </li>
-           <!-- Opción Mapa -->
-           <li>
-             <a href="/mapa">
-               <i class="fa fa-map-marker"></i>
-               <span>Mapa</span>
-             </a>
-           </li>
-           <!-- Opción Calendario -->
-           <li>
-             <a href="/calendario">
-               <i class="fa fa-calendar"></i>
-               <span>Calendario</span>
-               <span class="badge badge-pill badge-danger">3</span>
-             </a>
-           </li>
-           <!-- Opción Documentos -->
-           <li>
-             <a href="/documentos">
-               <i class="fa fa-folder"></i>
-               <span>Documentos</span>
-             </a>
-           </li>
-           <!-- Opción Configuración -->
-           <li>
-             <a href="/configuracion">
-               <i class="fa fa-cog"></i>
-               <span>Configuración</span>
-             </a>
-           </li>
-         </ul>
-       </div><br>
+          <!-- Opción Personal -->
+          <li class="header-menu">
+            <span>Personal</span>
+          </li>
+          <!-- Opción Servicios -->
+          <li>
+            <a href="/servicios1">
+              <i class="fa fa-address-card-o"></i>
+              <span>Servicios</span>
+            </a>
+          </li>
+          <!-- Opción Mapa -->
+          <li>
+            <a href="/mapa">
+              <i class="fa fa-map-marker"></i>
+              <span>Mapa</span>
+            </a>
+          </li>
+          <!-- Opción Calendario -->
+          <li>
+            <a href="/calendario">
+              <i class="fa fa-calendar"></i>
+              <span>Calendario</span>
+              <span class="badge badge-pill badge-danger">3</span>
+            </a>
+          </li>
+          <!-- Opción Documentos -->
+          <li>
+            <a href="/documentos">
+              <i class="fa fa-folder"></i>
+              <span>Documentos</span>
+            </a>
+          </li>
+          <!-- Opción Configuración -->
+          <li>
+            <a href="/configuracion">
+              <i class="fa fa-cog"></i>
+              <span>Configuración</span>
+            </a>
+          </li>
+        </ul>
+      </div><br>
 
-       <!-- Menú Búsqueda -->
-       <div class="sidebar-search">
-         <div><br>
-           <div class="input-group">
-             <input type="text" class="form-control search-menu" placeholder="Buscar...">
-             <div class="input-group-append">
-               <span class="input-group-text">
-                 <i class="fa fa-search" aria-hidden="true"></i>
-               </span>
-             </div>
-           </div>
-         </div>
-       </div>
+      <!-- Menú Búsqueda -->
+      <div class="sidebar-search">
+        <div><br>
+          <div class="input-group">
+            <input type="text" class="form-control search-menu" placeholder="Buscar...">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      </div>    
+    </div>
 
-     <!-- Dashboard Footer  -->
-     <div class="sidebar-footer">
-       <a href="/profile">
-         <i class="fa fa-bell"></i>
-         <span class="badge badge-pill badge-warning notification">3</span>
-       </a>
-       <a href="/profile">
-         <i class="fa fa-envelope"></i>
-         <span class="badge badge-pill badge-success notification">7</span>
-       </a>
-       <a href="/login" (click)='logout()'>
-         <i class="fa fa-sign-out fa-lg"></i>
-       </a>
-     </div>
-   </nav>
+    <!-- Dashboard Footer  -->
+    <div class="sidebar-footer">
+      <a href="/profile">
+        <i class="fa fa-bell"></i>
+        <span class="badge badge-pill badge-warning notification">3</span>
+      </a>
+      <a href="/profile">
+        <i class="fa fa-envelope"></i>
+        <span class="badge badge-pill badge-success notification">7</span>
+      </a>
+      <a href="/login" (click)='logout()'>
+        <i class="fa fa-sign-out fa-lg"></i>
+      </a>
+    </div>
+  </nav>
 
 
-   <!-- Dashboard Menú  -->
-   <main class="page-content">
-     <div class="container-fluid">
+  <!-- Dashboard Menú  -->
+  <main class="page-content">
+    <div class="container-fluid">
 
-       <h1 align="center" class="text-uppercase" style="color:#000000">BIENVENIDO, {{usuario}}!</h1><br>
+      <h1 align="center" class="text-uppercase" style="color:#000000">BIENVENIDO {{usuario}}!</h1><br>
 
-       <div class="container">
-         <div class="row">
-           <div class="col-lg-4">
-             <div class="our-team-main">
-               <div class="team-front">
-                 <img src="./../../../assets/img/servicios/img2.jpg" class="img-fluid" />
-                 <h3>Unimos Personas</h3>
-               </div>
-               <div class="team-back">
-                 <span>SportHub es una plataforma de entretenimiento a nivel global que une personas alrededor de sus aficiones e intereses permitiéndoles vivir experiencias presenciales a través de eventos y compartir contenidos digitalmente.</span>
-               </div>
-             </div>
-           </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="our-team-main">
+              <div class="team-front">
+                <img src="./../../../assets/img/servicios/img2.jpg" class="img-fluid" />
+                <h3>Unimos Personas</h3>
+              </div>
+              <div class="team-back">
+                <span>SportHub es una plataforma de entretenimiento a nivel global que une personas alrededor de sus
+                  aficiones e intereses permitiéndoles vivir experiencias presenciales a través de eventos y compartir
+                  contenidos digitalmente.</span>
+              </div>
+            </div>
+          </div>
 
-           <div class="col-lg-4">
-             <div class="our-team-main">
+          <div class="col-lg-4">
+            <div class="our-team-main">
 
-               <div class="team-front">
-                 <img src="./../../../assets/img/servicios/img1.jpg" class="img-fluid" />
-                 <h3>Creamos Momentos</h3>
-               </div>
+              <div class="team-front">
+                <img src="./../../../assets/img/servicios/img1.jpg" class="img-fluid" />
+                <h3>Creamos Momentos</h3>
+              </div>
 
-               <div class="team-back">
-                 <span>
-                  SportHub tiene alma, genera diversión, permite descubrir nuevos hobbies y personas a través de la generación de experiencias en vivo. Crea comunidades cercanas, unidas y se gana la confianza de su audiencia.
-                 </span>
-               </div>
+              <div class="team-back">
+                <span>
+                  SportHub tiene alma, genera diversión, permite descubrir nuevos hobbies y personas a través de la
+                  generación de experiencias en vivo. Crea comunidades cercanas, unidas y se gana la confianza de su
+                  audiencia.
+                </span>
+              </div>
 
-             </div>
-           </div>
+            </div>
+          </div>
 
-           <div class="col-lg-4">
-             <div class="our-team-main">
+          <div class="col-lg-4">
+            <div class="our-team-main">
 
-               <div class="team-front">
-                 <img src="./../../../assets/img/servicios/img3.jpg" class="img-fluid" />
-                 <h3>Generamos Experiencias</h3>
-               </div>
+              <div class="team-front">
+                <img src="./../../../assets/img/servicios/img3.jpg" class="img-fluid" />
+                <h3>Generamos Experiencias</h3>
+              </div>
 
-               <div class="team-back">
-                 <span>
-                  El objetivo de SportHub  es que el tiempo libre de las personas sea memorable, se diviertan en comunidades cercanas y unidas compartiendo sus pasiones.
-                 </span>
-               </div>
+              <div class="team-back">
+                <span>
+                  El objetivo de SportHub es que el tiempo libre de las personas sea memorable, se diviertan en
+                  comunidades cercanas y unidas compartiendo sus pasiones.
+                </span>
+              </div>
 
-             </div>
-           </div>
+            </div>
+          </div>
 
-           <div class="col-lg-4">
-             <div class="our-team-main">
+          <div class="col-lg-4">
+            <div class="our-team-main">
 
-               <div class="team-front">
-                 <img src="./../../../assets/img/servicios/img4.jpg" class="img-fluid" />
-                 <h3>Expertos en Hobbies</h3>
-               </div>
+              <div class="team-front">
+                <img src="./../../../assets/img/servicios/img4.jpg" class="img-fluid" />
+                <h3>Expertos en Hobbies</h3>
+              </div>
 
-               <div class="team-back">
-                 <span>
-                  SportHub permite a sus usuarios practicar los hobbies de una manera social, disponiendo de una fuente de información de personas y hobbies por localización en un único lugar.
-                 </span>
-               </div>
+              <div class="team-back">
+                <span>
+                  SportHub permite a sus usuarios practicar los hobbies de una manera social, disponiendo de una fuente
+                  de información de personas y hobbies por localización en un único lugar.
+                </span>
+              </div>
 
-             </div>
-           </div>
+            </div>
+          </div>
 
-           <div class="col-lg-4">
-             <div class="our-team-main">
+          <div class="col-lg-4">
+            <div class="our-team-main">
 
-               <div class="team-front">
-                 <img src="./../../../assets/img/deportes/rugby2.jpg" class="img-fluid" />
-                 <h3>Experiencias Reales</h3>
-               </div>
+              <div class="team-front">
+                <img src="./../../../assets/img/deportes/rugby2.jpg" class="img-fluid" />
+                <h3>Experiencias Reales</h3>
+              </div>
 
-               <div class="team-back">
-                 <span>
-                  Sport Hub permite a las personas disfrutar de experiencias únicas en la vida real entorno a sus pasiones, aquellas aficiones que llenan su tiempo libre y que les proporciona disfrute y felicidad.
-                 </span>
-               </div>
+              <div class="team-back">
+                <span>
+                  Sport Hub permite a las personas disfrutar de experiencias únicas en la vida real entorno a sus
+                  pasiones, aquellas aficiones que llenan su tiempo libre y que les proporciona disfrute y felicidad.
+                </span>
+              </div>
 
-             </div>
-           </div>
+            </div>
+          </div>
 
-           <div class="col-lg-4">
-             <div class="our-team-main">
+          <div class="col-lg-4">
+            <div class="our-team-main">
 
-               <div class="team-front">
-                 <img src="./../../../assets/img/registro1.jpg" class="img-fluid" />
-                 <h3>Únicos</h3>
-               </div>
+              <div class="team-front">
+                <img src="./../../../assets/img/registro1.jpg" class="img-fluid" />
+                <h3>Únicos</h3>
+              </div>
 
-               <div class="team-back">
-                 <span>
-                  Sport Hub pretende convertirse en experto en hobbies proporcionando a las personas contenidos de calidad, siendo tractor de la audiencia y ganando su confianza a través de la generación de líneas de comunicación.
-                 </span>
-               </div>
-             </div>
-           </div>
+              <div class="team-back">
+                <span>
+                  Sport Hub pretende convertirse en experto en hobbies proporcionando a las personas contenidos de
+                  calidad, siendo tractor de la audiencia y ganando su confianza a través de la generación de líneas de
+                  comunicación.
+                </span>
+              </div>
+            </div>
+          </div>
 
-         </div>
-       </div>
-     </div>
-   </main>
- </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div>

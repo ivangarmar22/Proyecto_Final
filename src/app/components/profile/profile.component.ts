@@ -13,14 +13,6 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  colorFondo:boolean  = false;
-  cambiarEstilo(){
-      let styles= {
-          'background-color': this.colorFondo ? '' : '#FFA93C',
-      };
-      return styles;
-  }
-
   logout(){
     this.router.navigate(['/login']);
     localStorage.removeItem('token');
