@@ -28,6 +28,7 @@ import { ConfiguracionComponent } from './components/dashboard/configuracion/con
 import { SportsComponent } from './components/dashboard/sports/sports.component';
 import { Torneos1Component } from './components/dashboard/torneos1/torneos1.component';
 import { Servicios1Component } from './components/dashboard/servicios1/servicios1.component';
+import { Home1Component } from './components/dashboard/home1/home1.component';
 
 
 /* Rutas Menú */
@@ -38,7 +39,7 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent, canActivate: [NoLoginGuard] },
   { path: 'registro', component: RegistroComponent },
-  { path: 'profile', component: ProfileComponent, canActivate: [LoginGuard] },
+  { path: 'dashboard', component: Home1Component, canActivate: [LoginGuard] },
   { path: 'sports', component: SportsComponent },
   { path: 'torneos1', component: Torneos1Component },
   { path: 'servicios1', component: Servicios1Component },
@@ -77,7 +78,8 @@ const routerOptions: ExtraOptions = {
     ConfiguracionComponent,
     SportsComponent,
     Torneos1Component,
-    Servicios1Component
+    Servicios1Component,
+    Home1Component
   ],
   imports: [
     BrowserModule,

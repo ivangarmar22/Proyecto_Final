@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   login(form: NgForm){
 
     if(form.value.email == localStorage.getItem("email") && form.value.password == localStorage.getItem("password")) {
-      this.router.navigate(['/profile']);
+      this.router.navigate(['/dashboard']);
 
       let token = "1";
       localStorage.setItem("token", token);
