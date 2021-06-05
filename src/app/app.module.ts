@@ -33,7 +33,7 @@ import { Servicios1Component } from './components/dashboard/servicios1/servicios
 /* Rutas Menú */
 const appRoutes : Routes = [
   { path: 'home', component: HomeComponent},
-  { path: 'deportes', component: Deportes2Component},
+  { path: 'comunidad', component: Deportes2Component},
   { path: 'torneos', component: TorneosComponent},
   { path: 'about', component: AboutComponent},
   { path: 'login', component: LoginComponent, canActivate: [NoLoginGuard] },
