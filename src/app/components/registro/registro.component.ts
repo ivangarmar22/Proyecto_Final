@@ -16,9 +16,9 @@ export class RegistroComponent implements OnInit {
 
   registro(form: NgForm){
 
-    if(form.value.email == "" || form.value.password == "" || form.value.nombre == ""){
+    if(form.value.email == "" || form.value.password == "" || form.value.nombre == "") {
       alert(" *** ERROR -> Rellena los datos correctamente ***");
-    }else{
+    } else {
       this.router.navigate(['/login']);
     }
 
