@@ -21,4 +21,12 @@ export class ProfileComponent implements OnInit {
   usuario = localStorage.getItem("nombre");
   email = localStorage.getItem("email");
 
+  colorFondo:boolean  = false;
+  cambiarEstilo(){
+      let styles= {
+          'background': this.colorFondo ? '#ff7c02' : '',
+      };
+      return styles;
+  }
+
 }
