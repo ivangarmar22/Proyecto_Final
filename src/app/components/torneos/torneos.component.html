@@ -98,11 +98,11 @@
 
 <!-- Formulario de contacto -->
 <section class="showcase">
+  <h2 class="h4 mb-4" id="titulo1">** Esto es una simulación para previsualizar los datos **</h2>
   <div class="row p-5">
     <div class="container p-1 mx-3 marco col-5">
 
       <form (ngSubmit)="onSubmit()" #miForm="ngForm">
-        <h2 class="h4 mb-4">Rellenas los datos</h2>
 
         <div class="form-group">
           <input id="nombre" type="text" class="form-control" placeholder="Nombre del Torneo" [(ngModel)]="nombre"
@@ -122,7 +122,7 @@
             <option>Marbella</option>
             <option>Ronda</option>
             <option>Mijas</option>
-            <option>benalmádena</option>
+            <option>Benalmádena</option>
             <option>Vélez-Málaga</option>
             <option>Fuengirola</option>
             <option>Estepona</option>
@@ -169,13 +169,6 @@
       </table>
     </div>
   </div>
-  <br>
-  <div class="text-center">
-    <button style="background-color:#FF8933;" class="btn btn-primary btn-xl text-uppercase" onclick="btnBuscar()"
-      id="btnBuscar" type="submit">Crear Torneo</button>
-  </div>
-
-  <br><br>
 </section>
 
 <app-contacto></app-contacto>

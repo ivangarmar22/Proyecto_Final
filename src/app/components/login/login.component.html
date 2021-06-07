@@ -12,7 +12,7 @@
 
     <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
       <input type="text" name="email" id="email" class="fadeIn second" placeholder="Email" ngModel>
-      <input type="text" name="password" id="password" class="fadeIn third" placeholder="Contraseña" ngModel><br><br>
+      <input type="password" name="password" id="password" class="fadeIn third" placeholder="Contraseña" ngModel><br><br>
       <input type="submit" class="fadeIn fourth" value="Log In" onclick="obtener_localstorage()">
     </form>
 

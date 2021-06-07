@@ -24,7 +24,7 @@ export class ProfileComponent implements OnInit {
   colorFondo:boolean  = false;
   cambiarEstilo(){
       let styles= {
-          'background': this.colorFondo ? '#ff7c02' : '',
+          'background': this.colorFondo ? '#d4d4d4' : '',
       };
       return styles;
   }

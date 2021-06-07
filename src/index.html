@@ -50,8 +50,28 @@
     }
   }
 
-  // Función Torneos
-  function btnBuscar() {
+  // Funcion Agregar usuario
+  function guardar_localstorage() {
+
+    let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    localStorage.setItem("nombre", nombre);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+  }
+
+  // Funcion Logear usuario
+  function obtener_localstorage() {
+
+    let nombre = localStorage.getItem("nombre");
+    let email = localStorage.getItem("email");
+    let password = localStorage.getItem("password");
+  }
+
+  // Función Validar Torneos
+  function btnBuscar1() {
     var nombre1 = false;
     var deporte1 = false;
     var ciudad1 = false;
@@ -59,11 +79,11 @@
     var fecha1 = false;
     var hoy = "2021-06-21";
 
-    var nombre = document.getElementById("nombre").value;
-    var deporte = document.getElementById("deporte").value;
-    var ciudad = document.getElementById("ciudad").value;
-    var equipo = document.getElementById("equipo").value;
-    var fecha = document.getElementById("fecha").value;
+    var nombre = document.getElementById("nombre_torneo").value;
+    var deporte = document.getElementById("deporte_torneo").value;
+    var ciudad = document.getElementById("ciudad_torneo").value;
+    var equipo = document.getElementById("participantes_torneo").value;
+    var fecha = document.getElementById("fecha_torneo").value;
 
     if (nombre == null || nombre.length == 0) {
       alert(" *** ERROR -> Introduce el Nombre del Torneo ***");
@@ -95,28 +115,71 @@
 
     if (nombre1 && deporte1 && ciudad1 && equipo1 && fecha1) {
       alert("El torneo " + nombre + " se ha creado en la fecha " + fecha + " correctamente!");
+      location.href="/servicios1"
     }
-  }
-
-  // Funcion Agregar usuario
-  function guardar_localstorage() {
-
-    let nombre = document.getElementById("nombre").value;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-
-    localStorage.setItem("nombre", nombre);
-    localStorage.setItem("email", email);
-    localStorage.setItem("password", password);
 
   }
 
-  // Funcion Logear usuario
-  function obtener_localstorage() {
+  // Funcion Crear Torneo
+  function crear_torneo() {
 
-    let nombre = localStorage.getItem("nombre");
-    let email = localStorage.getItem("email");
-    let password = localStorage.getItem("password");
+    let nombre_torneo = document.getElementById("nombre_torneo").value;
+    let deporte_torneo = document.getElementById("deporte_torneo").value;
+    let ciudad_torneo = document.getElementById("ciudad_torneo").value;
+    let participantes_torneo = document.getElementById("participantes_torneo").value;
+    let fecha_torneo = document.getElementById("fecha_torneo").value;
+
+    localStorage.setItem("nombre_torneo", nombre_torneo);
+    localStorage.setItem("deporte_torneo", deporte_torneo);
+    localStorage.setItem("ciudad_torneo", ciudad_torneo);
+    localStorage.setItem("participantes_torneo", participantes_torneo);
+    localStorage.setItem("fecha_torneo", fecha_torneo);
+
+  }
+
+    // Función Validar Comunidad
+    function btnBuscar2() {
+    var nombre1 = false;
+    var deporte1 = false;
+    var ciudad1 = false;
+
+    var nombre = document.getElementById("nombre_comunidad").value;
+    var deporte = document.getElementById("deporte_comunidad").value;
+    var ciudad = document.getElementById("ciudad_comunidad").value;
+
+    if (nombre == null || nombre.length == 0) {
+      alert(" *** ERROR -> Introduce el Nombre de la Comunidad ***");
+    } else {
+      nombre1 = true;
+    }
+    if (deporte == null || deporte.length == 0) {
+      alert(" *** ERROR -> Introduce un Deporte ***");
+    } else {
+      deporte1 = true;
+    }
+    if (ciudad == null || ciudad.length == 0) {
+      alert(" *** ERROR -> Selecciona una Ciudad ***");
+    } else {
+      ciudad1 = true;
+    }
+
+    if (nombre1 && deporte1 && ciudad1) {
+      alert("La comunidad " + nombre + " se ha creado correctamente!");
+      location.href="/servicios1"
+    }
+
+  }
+
+  // Funcion Crear Torneo
+  function crear_comunidad() {
+
+    let nombre_comunidad = document.getElementById("nombre_comunidad").value;
+    let deporte_comunidad = document.getElementById("deporte_comunidad").value;
+    let ciudad_comunidad = document.getElementById("ciudad_comunidad").value;
+
+    localStorage.setItem("nombre_comunidad", nombre_comunidad);
+    localStorage.setItem("deporte_comunidad", deporte_comunidad);
+    localStorage.setItem("ciudad_comunidad", ciudad_comunidad);
 
   }
 

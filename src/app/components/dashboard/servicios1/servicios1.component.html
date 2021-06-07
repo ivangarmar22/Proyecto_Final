@@ -1,10 +1,345 @@
 <app-profile></app-profile>
 
-<!-- Dashboard Home  -->
+<!-- Servicios  -->
 <main class="page-content">
-    <div class="container-fluid">
-      <br><br><br>
-      <h1 align="center" class="text-uppercase" style="color:#000000">TODOS TUS SERVICIOS!</h1><br><br><br>
-  
-      <div class="container">
-        <div class="row">
+  <div class="container-fluid">
+    <br><br><br>
+    <h1 align="center" class="text-uppercase" style="color:#000000">TODOS TUS SERVICIOS</h1><br><br><br>
+
+    <form>
+
+      <!-- Opcion 1 -->
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
+        (click)="subgrupo11=!subgrupo11">CREAR TU PROPIA COMUNIDAD</button><br>
+      <div *ngIf="subgrupo11" class="dos"><br><br>
+
+        <!-- Formulario -->
+        <section class="showcase">
+
+          <form>
+            <h2 class="h4 mb-4">Rellenas los datos de la comunidad</h2>
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Nombre de la Comunidad" name="nombre_comunidad"
+                id="nombre_comunidad">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Deporte" name="deporte_comunidad"
+                id="deporte_comunidad">
+            </div>
+
+            <div class="form-group">
+              <select class="form-control" placeholder="Escoge una Ciudad" placeholder="ciudad" name="ciudad_comunidad"
+                id="ciudad_comunidad">
+                <option hidden selected>Escoge una Ciudad</option>
+                <option>Málaga</option>
+                <option>Marbella</option>
+                <option>Ronda</option>
+                <option>Mijas</option>
+                <option>Benalmádena</option>
+                <option>Vélez-Málaga</option>
+                <option>Fuengirola</option>
+                <option>Estepona</option>
+                <option>Torremolinos</option>
+                <option>Antequera</option>
+              </select>
+            </div>
+
+          </form>
+
+          <br>
+          <div class="text-center">
+            <button style="background-color:#FF8933;" class="btn btn-primary btn-xl text-uppercase"
+              onclick="btnBuscar2(); crear_comunidad()" type="submit">Crear COMUNIDAD</button>
+          </div>
+          <br><br>
+
+        </section>
+
+      </div>
+      <br>
+
+
+      <!-- Opcion 2 -->
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
+        (click)="subgrupo12=!subgrupo12">VER TODAS LAS COMUNIDADES</button><br>
+      <div *ngIf="subgrupo12" class="dos"><br>
+
+        <table class="table table-striped">
+          <thead style="background-color:#ffa136;">
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Deporte</th>
+              <th scope="col">Ciudad</th>
+              <th scope="col">+ Info</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unicaja</td>
+              <td>Baloncesto</td>
+              <td>Málaga</td>
+              <td><a href="/servicios1"><i class="fa fa-plus-square fa-lg"></i></a></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Amantes del Padel</td>
+              <td>Padel</td>
+              <td>Benalmádena</td>
+              <td><a href="/servicios1"><i class="fa fa-plus-square fa-lg"></i></a></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Arco CD</td>
+              <td>Arco</td>
+              <td>Ronda</td>
+              <td><a href="/servicios1"><i class="fa fa-plus-square fa-lg"></i></a></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Los delfines</td>
+              <td>Natación</td>
+              <td>Vélez-Málaga</td>
+              <td><a href="/servicios1"><i class="fa fa-plus-square fa-lg"></i></a></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Los rompe muros</td>
+              <td>Fútbol Americano</td>
+              <td>Mijas</td>
+              <td><a href="/servicios1"><i class="fa fa-plus-square fa-lg"></i></a></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>{{ nombre_comunidad }}</td>
+              <td>{{ deporte_comunidad }}</td>
+              <td>{{ ciudad_comunidad }}</td>
+              <td><a href="/servicios1"><i class="fa fa-plus-square fa-lg"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <i class="fa fa-refresh fa-spin"></i>
+
+      </div>
+      <br>
+
+      <!-- Opcion 3 -->
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
+        (click)="subgrupo13=!subgrupo13">CREAR TU PROPIO TORNEO</button><br>
+      <div *ngIf="subgrupo13" class="dos"><br><br>
+
+        <!-- Formulario -->
+        <section class="showcase">
+
+          <form>
+            <h2 class="h4 mb-4">Rellenas los datos del torneo</h2>
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Nombre del Torneo" name="nombre_torneo"
+                id="nombre_torneo">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Deporte" name="deporte_torneo" id="deporte_torneo">
+            </div>
+
+            <div class="form-group">
+              <select class="form-control" placeholder="Escoge una Ciudad" placeholder="ciudad" name="ciudad_torneo"
+                id="ciudad_torneo">
+                <option hidden selected>Escoge una Ciudad</option>
+                <option>Málaga</option>
+                <option>Marbella</option>
+                <option>Ronda</option>
+                <option>Mijas</option>
+                <option>Benalmádena</option>
+                <option>Vélez-Málaga</option>
+                <option>Fuengirola</option>
+                <option>Estepona</option>
+                <option>Torremolinos</option>
+                <option>Antequera</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <input type="number" class="form-control" value="2" min="2" max="1000" placeholder="Número Participantes"
+                name="participantes_torneo" id="participantes_torneo">
+            </div>
+
+            <div class="form-group">
+              <input type="date" class="form-control" placeholder="Número participantes" name="fecha_torneo"
+                id="fecha_torneo">
+            </div>
+
+          </form>
+
+          <br>
+          <div class="text-center">
+            <button style="background-color:#FF8933;" class="btn btn-primary btn-xl text-uppercase"
+              onclick="btnBuscar1(); crear_torneo()" type="submit">Crear Torneo</button>
+          </div>
+          <br><br>
+
+        </section>
+
+      </div>
+      <br>
+
+      <!-- Opcion 4 -->
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
+        (click)="subgrupo14=!subgrupo14">VER TODOS LOS TORNEOS</button><br>
+      <div *ngIf="subgrupo14" class="dos"><br>
+
+        <table class="table table-striped">
+          <thead style="background-color:#ffa136;">
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Deporte</th>
+              <th scope="col">Ciudad</th>
+              <th scope="col">Nº Participantes</th>
+              <th scope="col">Fecha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Torneo 3X3 Basket</td>
+              <td>Baloncesto</td>
+              <td>Antequera</td>
+              <td>12</td>
+              <td>24/06/2021</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Torneo Golf XXI</td>
+              <td>Golf</td>
+              <td>Benalmádena</td>
+              <td>8</td>
+              <td>08/09/2021</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>World Padel Tour</td>
+              <td>Padel</td>
+              <td>Málaga</td>
+              <td>24</td>
+              <td>12/10/2021</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Roland Garros</td>
+              <td>Tenis</td>
+              <td>Marbella</td>
+              <td>10</td>
+              <td>13/06/2022</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Eurocopa</td>
+              <td>Fútbol</td>
+              <td>Ronda</td>
+              <td>124</td>
+              <td>27/08/2023</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>{{ nombre_torneo }}</td>
+              <td>{{ deporte_torneo }}</td>
+              <td>{{ ciudad_torneo }}</td>
+              <td>{{ participantes_torneo }}</td>
+              <td>{{ fecha_torneo }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <i class="fa fa-refresh fa-spin"></i>
+
+      </div>
+      <br>
+
+      <!-- Opcion 5 -->
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
+        (click)="subgrupo15=!subgrupo15">VER TODOS LOS DEPORTES</button><br>
+      <div *ngIf="subgrupo15" class="dos"><br>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-secondary">Paracaidismo</li>
+          <li class="list-group-item">Bungee jumping</li>
+          <li class="list-group-item list-group-item-secondary">Parkour</li>
+          <li class="list-group-item">Motocross</li>
+          <li class="list-group-item list-group-item-secondary">Alpinismo</li>
+          <li class="list-group-item">Rafting</li>
+          <li class="list-group-item list-group-item-secondary">Rápel</li>
+          <li class="list-group-item">Parapente</li>
+          <li class="list-group-item list-group-item-secondary">Surf</li>
+          <li class="list-group-item">Wingsuiting Flying</li>
+          <li class="list-group-item list-group-item-secondary">Surf</li>
+          <li class="list-group-item">Natación</li>
+          <li class="list-group-item list-group-item-secondary">Remo</li>
+          <li class="list-group-item">Saltos</li>
+          <li class="list-group-item list-group-item-secondary">Windsurf</li>
+          <li class="list-group-item">Waterpolo</li>
+          <li class="list-group-item list-group-item-secondary">Piragüismo</li>
+          <li class="list-group-item">Rafting</li>
+          <li class="list-group-item list-group-item-secondary">Buceo</li>
+          <li class="list-group-item">Esquí acuático</li>
+          <li class="list-group-item list-group-item-secondary">Subwing</li>
+          <li class="list-group-item">Baloncesto</li>
+          <li class="list-group-item list-group-item-secondary">Balonmano</li>
+          <li class="list-group-item">Béisbol</li>
+          <li class="list-group-item list-group-item-secondary">Fútbol</li>
+          <li class="list-group-item">Fúbol Sala</li>
+          <li class="list-group-item list-group-item-secondary">Hockey</li>
+          <li class="list-group-item">Lacrosse</li>
+          <li class="list-group-item list-group-item-secondary">Kin-Ball</li>
+          <li class="list-group-item">Kurling</li>
+          <li class="list-group-item list-group-item-secondary">Mazaball</li>
+          <li class="list-group-item">Rugby</li>
+          <li class="list-group-item list-group-item-secondary">Voleibol</li>
+          <li class="list-group-item">Voley Playa</li>
+          <li class="list-group-item list-group-item-secondary">Bádminton</li>
+          <li class="list-group-item">Béisbol</li>
+          <li class="list-group-item list-group-item-secondary">Baloncesto</li>
+          <li class="list-group-item">Balonmano</li>
+          <li class="list-group-item list-group-item-secondary">Billar</li>
+          <li class="list-group-item">Bolos</li>
+          <li class="list-group-item list-group-item-secondary">Fútbol</li>
+          <li class="list-group-item">Frontón</li>
+          <li class="list-group-item list-group-item-secondary">Golf</li>
+          <li class="list-group-item">Hockey</li>
+          <li class="list-group-item list-group-item-secondary">Lacrosse</li>
+          <li class="list-group-item">Pádel</li>
+          <li class="list-group-item list-group-item-secondary">Paintball</li>
+          <li class="list-group-item">Pelota vasca</li>
+          <li class="list-group-item list-group-item-secondary">Polo</li>
+          <li class="list-group-item">Quidditch </li>
+          <li class="list-group-item list-group-item-secondary">Rugby</li>
+          <li class="list-group-item">Squash</li>
+          <li class="list-group-item list-group-item-secondary">Tenis</li>
+          <li class="list-group-item">Voleibol</li>
+          <li class="list-group-item list-group-item-secondary">Voley playa</li>
+          <li class="list-group-item">Waterpolo</li>
+          <li class="list-group-item list-group-item-secondary">Ajedrez</li>
+          <li class="list-group-item">Naipes o cartas</li>
+          <li class="list-group-item list-group-item-secondary">Monopoly</li>
+          <li class="list-group-item">Dominó</li>
+          <li class="list-group-item list-group-item-secondary">Rompecabezas</li>
+          <li class="list-group-item">Backgammon</li>
+          <li class="list-group-item list-group-item-secondary">Damas</li>
+          <li class="list-group-item">Damas chinas</li>
+          <li class="list-group-item list-group-item-secondary">Jenga</li>
+          <li class="list-group-item">Twister</li>
+        </ul>
+        <br>
+      </div>
+    </form>
+    <br><br><br>

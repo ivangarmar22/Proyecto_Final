@@ -40,13 +40,13 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent, canActivate: [NoLoginGuard] },
   { path: 'registro', component: RegistroComponent },
   { path: 'dashboard', component: Home1Component, canActivate: [LoginGuard] },
-  { path: 'sports', component: SportsComponent },
-  { path: 'torneos1', component: Torneos1Component },
-  { path: 'servicios1', component: Servicios1Component },
-  { path: 'mapa', component: MapaComponent },
-  { path: 'calendario', component: CalendarioComponent },
-  { path: 'documentos', component: DocumentosComponent },
-  { path: 'configuracion', component: ConfiguracionComponent },
+  { path: 'sports', component: SportsComponent, canActivate: [LoginGuard] },
+  { path: 'torneos1', component: Torneos1Component, canActivate: [LoginGuard] },
+  { path: 'servicios1', component: Servicios1Component, canActivate: [LoginGuard] },
+  { path: 'mapa', component: MapaComponent, canActivate: [LoginGuard] },
+  { path: 'calendario', component: CalendarioComponent, canActivate: [LoginGuard] },
+  { path: 'documentos', component: DocumentosComponent, canActivate: [LoginGuard] },
+  { path: 'configuracion', component: ConfiguracionComponent, canActivate: [LoginGuard] },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ]
 

@@ -1117,3 +1117,7 @@ input[type=button].btn-block {
 a:not(.btn) {
   text-decoration: underline;
 }
+
+#titulo1{
+  margin-left: 440px;
+}
