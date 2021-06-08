@@ -172,9 +172,7 @@
     color: white;
     background: #cd1b1b;
   }
-  #calendar .week .day .surprise {
-    display: none;
-  }
+
   #calendar .week .day#christmas-day {
     text-align: center;
   }
@@ -198,7 +196,7 @@
   }
 
   #calendar .week .day:hover {
-    background-color: #305dd4;
+    background-color: #3268fc;
     cursor: pointer;
   }
 
@@ -219,4 +217,19 @@
     left: 0;
   }
 
+  #parrafo {
+    position: relative;
+    top: 45px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  #mes {
+    margin-left: 450px;
+    font-weight: bold;
+    font-size: 25px;
+  }
   
