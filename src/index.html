@@ -115,7 +115,7 @@
 
     if (nombre1 && deporte1 && ciudad1 && equipo1 && fecha1) {
       alert("El torneo " + nombre + " se ha creado en la fecha " + fecha + " correctamente!");
-      location.href="/servicios1"
+      location.href = "/servicios1"
     }
 
   }
@@ -137,8 +137,8 @@
 
   }
 
-    // Función Validar Comunidad
-    function btnBuscar2() {
+  // Función Validar Comunidad
+  function btnBuscar2() {
     var nombre1 = false;
     var deporte1 = false;
     var ciudad1 = false;
@@ -165,7 +165,7 @@
 
     if (nombre1 && deporte1 && ciudad1) {
       alert("La comunidad " + nombre + " se ha creado correctamente!");
-      location.href="/servicios1"
+      location.href = "/servicios1"
     }
 
   }
@@ -180,6 +180,59 @@
     localStorage.setItem("nombre_comunidad", nombre_comunidad);
     localStorage.setItem("deporte_comunidad", deporte_comunidad);
     localStorage.setItem("ciudad_comunidad", ciudad_comunidad);
+
+  }
+
+  // Previsualización Imágenes
+  function showImage() {
+    if (this.files && this.files[0]) {
+      
+      var obj = new FileReader();
+
+      obj.onload = function (data) {
+        var image = document.getElementById("image");
+        image.src = data.target.result;
+        image.style.display = "block";
+
+        var image1 = document.getElementById("image1");
+        image1.src = data.target.result;
+        image1.style.display = "block";
+      }
+
+      obj.readAsDataURL(this.files[0]);
+    }
+  }
+
+  function hrefDatos() {
+
+    var nombre = false;
+    var email = false;
+    var password = false;
+
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if (nombre == null || nombre.length == 0) {
+      alert(" *** ERROR -> Introduce un Nombre ***");
+    } else {
+      nombre = true;
+    }
+    if (email == null || email.length == 0) {
+      alert(" *** ERROR -> Introduce un Correo ***");
+    } else {
+      email = true;
+    }
+    if (password == null || password.length == 0) {
+      alert(" *** ERROR -> Introduce una Contraseña ***");
+    } else {
+      password = true;
+    }
+
+    if (nombre && email && password) {
+      alert("Los datos de han modificado correctamente!");
+      location.href = "/datos";
+    }
 
   }
 

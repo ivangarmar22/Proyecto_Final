@@ -1,1 +1,127 @@
 <app-profile></app-profile>
+<br>
+<div class="container1">
+  <div class="row login_box">
+    <div class="col-md-12 col-xs-12" align="center">
+
+      <div class="line">
+        <p></p>
+        <h3>{{horas}} / {{fecha}}</h3>
+      </div>
+      <br>
+      <div class="image-upload">
+        <label for="file-input">
+          <img src="./../../../../assets/img/perfil.jpg" id="image1" />
+        </label>
+        <input id="file-input" type="file" onchange="showImage.call(this)" />
+      </div>
+
+      <h1>{{usuario}}</h1>
+      <span>{{email}}</span>
+      <br><br>
+
+    </div>
+
+    <div class="col-md-6 col-xs-6 follow line" align="center">
+      <p></p>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="progress blue">
+          <span class="progress-left">
+            <span class="progress-bar"></span>
+          </span>
+          <span class="progress-right">
+            <span class="progress-bar"></span>
+          </span>
+          <div class="progress-value">90%</div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <h4 id="comunidades">Comunidades</h4>
+      <h4 id="comunidades">124</h4>
+    </div>
+
+    <div class="col-md-6 col-xs-6 follow line" align="center">
+      <p></p>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="progress yellow">
+          <span class="progress-left">
+            <span class="progress-bar"></span>
+          </span>
+          <span class="progress-right">
+            <span class="progress-bar"></span>
+          </span>
+          <div class="progress-value">75%</div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <h4 id="comunidades">Torneos</h4>
+      <h4 id="comunidades">67</h4>
+    </div>
+
+    <div class="col-md-12 col-xs-12 login_control">
+
+      <div class="control">
+        <div class="label">Nombre</div>
+        <input type="text" class="form-control" value={{usuario}} />
+      </div>
+
+      <div class="control">
+        <div class="label">Email</div>
+        <input type="text" class="form-control" value={{email}} />
+      </div>
+
+      <div class="control">
+        <div class="label">Contraseña</div>
+        <input type="password" class="form-control" value={{password}} />
+      </div>
+
+    </div>
+
+  </div>
+
+  <br>
+
+  <button type="button" class="btn btn-info btn-lg" (click)="open(content)">Editar Datos</button>
+
+  <ng-template #content let-c="close">
+
+    <div class="modal-header">
+      <h3 class="top1">Modifica tus datos</h3>
+    </div>
+
+    <div class="col-md-12 col-xs-12 login_control">
+
+      <div class="control">
+        <div class="label">Nombre</div>
+        <input type="text" name="nombre" id="nombre" class="form-control" value={{usuario}}/>
+      </div>
+
+      <div class="control">
+        <div class="label">Email</div>
+        <input type="text" name="email" id="email" class="form-control" value={{email}}/>
+      </div>
+
+      <div class="control">
+        <div class="label">Contraseña</div>
+        <input type="text" name="password" id="password" class="form-control" value={{password}}/>
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <a style="margin-right: 317px" href="/datos" class="btn btn-danger">Salir</a>
+      <button type="button" class="btn btn-success" (click)="href('Save click')" onclick="guardar_localstorage(); obtener_localstorage(); hrefDatos()" >Guardar</button>
+    </div>
+
+  </ng-template>
+
+
+</div>
+
+<br><br>

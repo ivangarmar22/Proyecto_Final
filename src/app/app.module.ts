@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ModalModule } from 'ngb-modal';
 
 /* Componentes */
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { SportsComponent } from './components/dashboard/sports/sports.component'
 import { Torneos1Component } from './components/dashboard/torneos1/torneos1.component';
 import { Servicios1Component } from './components/dashboard/servicios1/servicios1.component';
 import { Home1Component } from './components/dashboard/home1/home1.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 /* Rutas Menú */
@@ -45,8 +47,8 @@ const appRoutes: Routes = [
   { path: 'servicios1', component: Servicios1Component, canActivate: [LoginGuard] },
   { path: 'mapa', component: MapaComponent, canActivate: [LoginGuard] },
   { path: 'calendario', component: CalendarioComponent, canActivate: [LoginGuard] },
-  { path: 'documentos', component: DocumentosComponent, canActivate: [LoginGuard] },
-  { path: 'configuracion', component: ConfiguracionComponent, canActivate: [LoginGuard] },
+  { path: 'inscripciones', component: DocumentosComponent, canActivate: [LoginGuard] },
+  { path: 'datos', component: ConfiguracionComponent, canActivate: [LoginGuard] },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ]
 
@@ -86,7 +88,8 @@ const routerOptions: ExtraOptions = {
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes, routerOptions),
-
+    ModalModule,
+    NgbModule
   ],
   providers: [LoginGuard],
   bootstrap: [AppComponent]

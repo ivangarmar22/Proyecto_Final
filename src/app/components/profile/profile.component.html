@@ -4,7 +4,7 @@
     <div class="sidebar-content">
       <div class="sidebar-header">
         <div class="user-pic">
-          <img class="img-responsive img-rounded" src="/assets/img/perfil.jpg" alt="User picture">
+          <img class="img-responsive img-rounded" src="/assets/img/perfil.jpg" alt="User picture" id="image">
         </div>
         <div class="user-info">
           <span class="user-name"><strong>{{usuario}}</strong>
@@ -18,9 +18,10 @@
         </div>
 
         <div class="custom-control custom-switch">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="custom-control-input" id="customSwitch1" name="colorFondo" [(ngModel)]="colorFondo">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="custom-control-input" id="customSwitch1"
+            name="colorFondo" [(ngModel)]="colorFondo">
           <label class="custom-control-label" for="customSwitch1"></label>
-        </div> 
+        </div>
 
       </div>
 
@@ -80,18 +81,18 @@
               <span class="badge badge-pill badge-primary">Beta</span>
             </a>
           </li>
-          <!-- Opción Documentos -->
+          <!-- Opción Inscripciones -->
           <li>
-            <a href="/documentos">
-              <i class="fa fa-folder"></i>
-              <span>Documentos</span>
+            <a href="/inscripciones">
+              <i class="fa fa-check-square-o" aria-hidden="true"></i>
+              <span>Inscripciones</span>
             </a>
           </li>
-          <!-- Opción Configuración -->
+          <!-- Opción Datos -->
           <li>
-            <a href="/configuracion">
-              <i class="fa fa-cog"></i>
-              <span>Configuración</span>
+            <a href="/datos">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <span>Datos Personales</span>
             </a>
           </li>
         </ul>
@@ -123,7 +124,7 @@
         <i class="fa fa-envelope"></i>
         <span class="badge badge-pill badge-success notification">7</span>
       </a>
-      <a href="/login" (click)='logout()'>
+      <a (click)='logout()'>
         <i class="fa fa-sign-out fa-lg"></i>
       </a>
     </div>
