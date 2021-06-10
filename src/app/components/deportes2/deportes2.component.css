@@ -1265,3 +1265,9 @@ header.masthead h1 {
 .bg-primary {
   background-color: #FF8933 !important;
 }
+
+#deportes {
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+}

@@ -57,162 +57,138 @@
 <div class="progress">
   <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="20" aria-valuemin="0"
     aria-valuemax="100"></div>
-</div><br><br>
+</div>
+<br><br><br><br>
 
 <!-- Deportes -->
 <div class="text-center">
-  <h1 class="text-uppercase text-black font-weight-bold">ENCUENTRA TU COMUNIDAD</h1>
-</div><br>
+  <h1 class="text-uppercase text-black font-weight-bold">DESCUBRE NUESTROS DEPORTES</h1>
+</div><br><br><br>
 
-<!-- Barra Progreso -->
-<div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="20" aria-valuemin="0"
-    aria-valuemax="100"></div>
-</div>
+<section id="deportes">
 
-<section class="showcase" id="deportes">
+  <!-- Selects -->
+    <form>
 
-  <div class="container-fluid p-0">
-    <div class="row no-gutters">
-
-      <!-- Formulario -->
-      <div class="col-lg-6 order-lg-2 showcase-img"
-        style="background-image: url('./../../../assets/img/comunidad1_1.jpg');"></div>
-
-      <!-- Selects -->
-      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-        <h3 class="text-uppercase text-black font-weight-light;">Busca tu Hobbie</h3><br>
-
-        <form>
-          <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
-            (click)="subgrupo11=!subgrupo11">Deportes Acuáticos</button><br>
-          <div *ngIf="subgrupo11" class="dos">
-            <br>
-            <select class="form-control" placeholder="Escoge un Deporte" id="deportes1">
-              <option hidden selected>Escoge un Deporte</option>
-              <option>Surf</option>
-              <option>Natación</option>
-              <option>Remo</option>
-              <option>Saltos</option>
-              <option>Windsurf</option>
-              <option>Waterpolo</option>
-              <option>Piragüismo</option>
-              <option>Rafting</option>
-              <option>Buceo</option>
-              <option>Esquí acuático</option>
-              <option>Subwing</option>
-            </select>
-            <br>
-          </div>
-          <br>
-
-          <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
-            (click)="subgrupo12=!subgrupo12">Deportes de Equipo</button><br>
-          <div *ngIf="subgrupo12" class="dos"><br>
-            <br>
-            <select class="form-control" placeholder="Escoge un Deporte" id="deportes2">
-              <option hidden selected>Escoge un Deporte</option>
-              <option>Baloncesto</option>
-              <option>Balonmano</option>
-              <option>Béisbol</option>
-              <option>Fútbol</option>
-              <option>Fúbol Sala</option>
-              <option>Hockey</option>
-              <option>Lacrosse</option>
-              <option>Kin-Ball</option>
-              <option>Kurling</option>
-              <option>Mazaball</option>
-              <option>Rugby</option>
-              <option>Voleibol</option>
-              <option>Voley Playa</option>
-            </select>
-            <br>
-          </div>
-          <br>
-
-          <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
-            (click)="subgrupo13=!subgrupo13">Deportes Extremos</button><br>
-          <div *ngIf="subgrupo13" class="dos"><br>
-            <br>
-            <select class="form-control" placeholder="Escoge un Deporte" id="deportes3">
-              <option hidden selected>Escoge un Deporte</option>
-              <option>Paracaidismo</option>
-              <option>Bungee jumping</option>
-              <option>Parkour</option>
-              <option>Motocross</option>
-              <option>Alpinismo</option>
-              <option>Rafting</option>
-              <option>Rápel</option>
-              <option>Parapente</option>
-              <option>Surf</option>
-              <option>Wingsuiting Flying</option>
-            </select>
-            <br>
-          </div>
-          <br>
-
-          <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
-            (click)="subgrupo14=!subgrupo14">Deportes de Pelota</button><br>
-          <div *ngIf="subgrupo14" class="dos"><br>
-            <br>
-            <select class="form-control" placeholder="Escoge un Deporte" id="deportes4">
-              <option hidden selected>Escoge un Deporte</option>
-              <option>Bádminton</option>
-              <option>Béisbol</option>
-              <option>Baloncesto</option>
-              <option>Balonmano</option>
-              <option>Billar</option>
-              <option>Bolos</option>
-              <option>Fútbol</option>
-              <option>Frontón</option>
-              <option>Golf</option>
-              <option>Hockey</option>
-              <option>Lacrosse</option>
-              <option>Pádel</option>
-              <option>Paintball</option>
-              <option>Pelota vasca</option>
-              <option>Polo</option>
-              <option>Quidditch </option>
-              <option>Rugby</option>
-              <option>Squash</option>
-              <option>Tenis</option>
-              <option>Voleibol</option>
-              <option>Voley playa</option>
-              <option>Waterpolo</option>
-            </select>
-            <br>
-          </div>
-          <br>
-
-          <button style="background-color:#FF8933;" type="button" class="btn btn-primary tamB"
-            (click)="subgrupo15=!subgrupo15">Deportes de Mesa</button><br>
-          <div *ngIf="subgrupo15" class="dos"><br>
-            <br>
-            <select class="form-control" placeholder="Escoge un Deporte" id="deportes5">
-              <option hidden selected>Escoge un Deporte</option>
-              <option>Ajedrez</option>
-              <option>Naipes o cartas</option>
-              <option>Monopoly</option>
-              <option>Dominó</option>
-              <option>Rompecabezas</option>
-              <option>Backgammon</option>
-              <option>Damas</option>
-              <option>Damas chinas</option>
-              <option>Jenga</option>
-              <option>Twister</option>
-            </select>
-          </div>
-        </form>
-        <br><br><br><br>
-        <div class="text-center">
-          <button style="background-color:#FF8933;" class="btn btn-primary btn-xl text-uppercase" onclick="btnBuscar()"
-            id="btnBuscar" type="submit">Buscar Comunidades</button>
-        </div>
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary btn-block btn-lg" 
+        (click)="subgrupo11=!subgrupo11"><i class="fa fa-anchor" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deportes Acuáticos</button><br>
+      <div *ngIf="subgrupo11" class="dos">
+        <select class="form-control" placeholder="Escoge un Deporte" id="deportes1">
+          <option hidden selected>Escoge un Deporte</option>
+          <option>Surf</option>
+          <option>Natación</option>
+          <option>Remo</option>
+          <option>Saltos</option>
+          <option>Windsurf</option>
+          <option>Waterpolo</option>
+          <option>Piragüismo</option>
+          <option>Rafting</option>
+          <option>Buceo</option>
+          <option>Esquí acuático</option>
+          <option>Subwing</option>
+        </select>
+        <br>
       </div>
-    </div>
-    <br>
-  </div>
+      <br>
+
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary btn-block btn-lg" 
+        (click)="subgrupo12=!subgrupo12"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deportes de Equipo</button><br>
+      <div *ngIf="subgrupo12" class="dos">
+        <select class="form-control" placeholder="Escoge un Deporte" id="deportes2">
+          <option hidden selected>Escoge un Deporte</option>
+          <option>Baloncesto</option>
+          <option>Balonmano</option>
+          <option>Béisbol</option>
+          <option>Fútbol</option>
+          <option>Fúbol Sala</option>
+          <option>Hockey</option>
+          <option>Lacrosse</option>
+          <option>Kin-Ball</option>
+          <option>Kurling</option>
+          <option>Mazaball</option>
+          <option>Rugby</option>
+          <option>Voleibol</option>
+          <option>Voley Playa</option>
+        </select>
+        <br>
+      </div>
+      <br>
+
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary btn-block btn-lg"
+        (click)="subgrupo13=!subgrupo13"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deportes Extremos</button><br>
+      <div *ngIf="subgrupo13" class="dos">
+        <select class="form-control" placeholder="Escoge un Deporte" id="deportes3">
+          <option hidden selected>Escoge un Deporte</option>
+          <option>Paracaidismo</option>
+          <option>Bungee jumping</option>
+          <option>Parkour</option>
+          <option>Motocross</option>
+          <option>Alpinismo</option>
+          <option>Rafting</option>
+          <option>Rápel</option>
+          <option>Parapente</option>
+          <option>Surf</option>
+          <option>Wingsuiting Flying</option>
+        </select>
+        <br>
+      </div>
+      <br>
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary btn-block btn-lg"
+        (click)="subgrupo14=!subgrupo14"><i class="fa fa-futbol-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deportes de Pelota</button><br>
+      <div *ngIf="subgrupo14" class="dos">
+        <select class="form-control" placeholder="Escoge un Deporte" id="deportes4">
+          <option hidden selected>Escoge un Deporte</option>
+          <option>Bádminton</option>
+          <option>Béisbol</option>
+          <option>Baloncesto</option>
+          <option>Balonmano</option>
+          <option>Billar</option>
+          <option>Bolos</option>
+          <option>Fútbol</option>
+          <option>Frontón</option>
+          <option>Golf</option>
+          <option>Hockey</option>
+          <option>Lacrosse</option>
+          <option>Pádel</option>
+          <option>Paintball</option>
+          <option>Pelota vasca</option>
+          <option>Polo</option>
+          <option>Quidditch </option>
+          <option>Rugby</option>
+          <option>Squash</option>
+          <option>Tenis</option>
+          <option>Voleibol</option>
+          <option>Voley playa</option>
+          <option>Waterpolo</option>
+        </select>
+        <br>
+      </div>
+      <br>
+
+      <button style="background-color:#FF8933;" type="button" class="btn btn-primary btn-block btn-lg"
+        (click)="subgrupo15=!subgrupo15"><i class="fa fa-table" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deportes de Mesa</button><br>
+      <div *ngIf="subgrupo15" class="dos">
+        <select class="form-control" placeholder="Escoge un Deporte" id="deportes5">
+          <option hidden selected>Escoge un Deporte</option>
+          <option>Ajedrez</option>
+          <option>Naipes o cartas</option>
+          <option>Monopoly</option>
+          <option>Dominó</option>
+          <option>Rompecabezas</option>
+          <option>Backgammon</option>
+          <option>Damas</option>
+          <option>Damas chinas</option>
+          <option>Jenga</option>
+          <option>Twister</option>
+        </select>
+      </div>
+
+    </form>
+
+    <br><br><br><br>
+
 </section>
+<br>
 
 <!-- Barra de progreso -->
 <div class="site-section bg-light">
